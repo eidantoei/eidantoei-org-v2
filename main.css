@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;700&JetBrains+Mono:ital,wght@0,400;1,400;0,600;1,600&display=swap');
+
+html {
+  --page-max-width: 530px;
+  --page-bg-color: #d9dfdf;
+  --link-bg-color: #f1f1f1;
+  --link-text-color: #2c2c2c;
+  --link-secondary-color: #8b9c9c; 
+  --link-light-color: #aeaeae;
+}
+
+body {
+  background-color: var(--page-bg-color);
+  font-family: 'Inter Tight', sans-serif;
+}
+
+main {
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin: 2em 0 0.5em;
+  width: 100%;
+  max-width: var(--page-max-width);
+  font-weight: 300;
+}
+
+.heading.large {
+  font-size: 1.6em;
+}
+
+.profile {
+  margin-top: 3em;
+  width: 100%;
+  max-width: var(--page-max-width);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.profile .icon {
+  margin: 0px;
+  user-select: none;
+}
+
+.profile .icon img {
+  width: 50px;
+  border-radius: 12px;
+}
+
+.links {
+  width: 100%;
+  max-width: var(--page-max-width);
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 15px;
+  padding: 0;
+}
+
+.links .item {
+  list-style: none;
+}
+
+.links .button {
+  display: block;
+	height: 3.6em;
+  padding: 0 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--link-light-color);
+  border-radius: 0em;
+  background-color: var(--link-bg-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links .button:hover {
+  border-color: var(--link-text-color);
+}
+
+.links .button .title {
+  color: var(--link-text-color);
+  font-family: 'JetBrains Mono', monospace; 
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.links .button .title small{
+  font-size: 0.6em;
+}
+
+.links .button .badge {
+  padding: 1px 10px;
+  border-radius: 1em;
+  font-size: 0.7em;
+  font-family: 'JetBrains Mono', monospace;
+  font-style: italic;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: var(--link-secondary-color);
+}
+
+.links .button .screenname {
+  font-size: 0.9em;
+  color: #92AA9E; 
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+}
+
+.whatabout {
+  font-size: max(12px, 50%);
+  font-weight: 300;
+}
+
+.inactive {
+  opacity: 0.4;
+}
