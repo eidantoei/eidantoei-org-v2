@@ -125,3 +125,16 @@ main {
 .inactive {
   opacity: 0.4;
 }
+
+footer {
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin: 10em 0 5em;
+  text-align: center;
+}
+
+.footer-sign {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--link-secondary-color);
+  font-size: 2em;
+}
