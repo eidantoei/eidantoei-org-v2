@@ -18,6 +18,7 @@ main {
   display: flex;
 	flex-direction: column;
   align-items: center;
+  margin: 0 15px;
 }
 
 .heading {
@@ -32,7 +33,7 @@ main {
 }
 
 .profile {
-  margin-top: 3em;
+  margin-top: 5em;
   width: 100%;
   max-width: var(--page-max-width);
   display: flex;
@@ -47,8 +48,8 @@ main {
 }
 
 .profile .icon img {
-  width: 50px;
-  border-radius: 12px;
+  width: 40px;
+  border-radius: 9px;
 }
 
 .links {
@@ -91,7 +92,7 @@ main {
   color: var(--link-text-color);
   font-family: 'JetBrains Mono', monospace; 
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 .links .button .title small{
