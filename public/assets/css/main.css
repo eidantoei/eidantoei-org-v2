@@ -5,6 +5,7 @@ html {
   --page-bg-color: #d9dfdf;
   --link-bg-color: #f1f1f1;
   --link-text-color: #2c2c2c;
+  --link-primary-color: #439c9c; 
   --link-secondary-color: #8b9c9c; 
   --link-light-color: #aeaeae;
 }
@@ -85,6 +86,14 @@ main {
 }
 
 .links .button:hover {
+  border-color: var(--link-text-color);
+}
+
+.links .item.featured .button {
+  border-color: var(--link-primary-color);
+}
+
+.links .item.featured .button:hover {
   border-color: var(--link-text-color);
 }
 
