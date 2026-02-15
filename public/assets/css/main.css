@@ -18,23 +18,23 @@
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
-/* space-mono-latin-400-normal */
+/* victor-mono-latin-wght-normal */
 @font-face {
-  font-family: 'Space Mono';
+  font-family: 'Victor Mono Variable';
   font-style: normal;
   font-display: swap;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/space-mono@latest/latin-400-normal.woff2) format('woff2');
+  font-weight: 100 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/victor-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
-/* space-mono-latin-700-italic */
+/* victor-mono-latin-wght-normal */
 @font-face {
-  font-family: 'Space Mono';
+  font-family: 'Victor Mono Variable';
   font-style: italic;
   font-display: swap;
-  font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/space-mono@latest/latin-700-italic.woff2) format('woff2');
+  font-weight: 100 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/victor-mono:vf@latest/latin-wght-italic.woff2) format('woff2-variations');
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
@@ -46,11 +46,13 @@ html {
   --link-primary-color: #439c9c; 
   --link-secondary-color: #8b9c9c; 
   --link-light-color: #aeaeae;
+  --font-sans: 'Inter Tight', sans-serif;
+  --font-monospaced: 'Victor Mono Variable', monospace;
 }
 
 body {
   background-color: var(--page-bg-color);
-  font-family: 'Inter Tight', sans-serif;
+  font-family: var(--font-sans); 
 }
 
 main {
@@ -137,7 +139,7 @@ main {
 
 .links .button .title {
   color: var(--link-text-color);
-  font-family: 'Space Mono', monospace; 
+  font-family: var(--font-monospaced); 
   font-weight: 400;
   font-size: 1.1em;
 }
@@ -150,7 +152,7 @@ main {
   padding: 1px 10px;
   border-radius: 1em;
   font-size: 0.7em;
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-monospaced); 
   font-style: italic;
   font-weight: 700;
   color: #ffffff;
@@ -160,7 +162,7 @@ main {
 .links .button .screenname {
   font-size: 0.8em;
   color: #92AA9E; 
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-monospaced); 
   font-weight: 400;
 }
 
@@ -192,7 +194,7 @@ footer {
 }
 
 .footer-sign {
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-monospaced); 
   color: var(--link-secondary-color);
   font-size: 2em;
 }
